@@ -26,7 +26,7 @@ Keyword arguments:
 ; n = 100, T = typeof(1.)
 """
 function gen_paraboloid_diagonal(; n = 100, T = typeof(1.))
-    mat = sparse(T.(Diagonal(1:n)))
+    mat = T.(Diagonal(1:n))
     vec = ones(T, n)
     xt = Vector{T}(undef, n)
     cache = Vector{T}(undef, n)
@@ -46,7 +46,7 @@ function gen_paraboloid_random_matrix(; n = 100, scaling = true, T = typeof(1.))
     #init_stable_rand()
     #F = qr(stable_rand(n,n; D = Normal(), T))
     F = qr(randn(T, n,n))
-    mat = scaling ? F.Q'*sparse(Diagonal(T.(float(1:n))))*F.Q : F.Q'F.Q
+    mat = scaling ? F.Q'*Diagonal(T.(float(1:n)))*F.Q : F.Q'F.Q
     vec = ones(T, n)
     xt = Vector{T}(undef, n)
     cache = Vector{T}(undef, n)
