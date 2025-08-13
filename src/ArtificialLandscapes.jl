@@ -2,7 +2,6 @@ module ArtificialLandscapes
 
 	# ---- Imports ----
 	import FastPow.@fastpow
-	using SparseArrays
 	using LinearAlgebra
 
 	# ---- Includes ----

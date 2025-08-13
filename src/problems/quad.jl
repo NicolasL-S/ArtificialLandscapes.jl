@@ -18,7 +18,7 @@ Keyword argument:
 ; n = 100, T = typeof(1.)
 """
 function gen_quad(; n = 100, T = typeof(1.))
-    mat = sparse(T.(Diagonal(1:n)))
+    mat = T.(Diagonal(1:n))
     x0 = zeros(T, n)
     vec = ones(T, n)
     xt = Vector{T}(undef,n)
