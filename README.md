@@ -39,4 +39,6 @@ p = landscapes["LUKSAN11LS"]
 
 All efforts are made for problems to be in conformity to their original version. A notable exception is for CUTEst problems. Since these have become standard use, every effort is made so that the outputs are identical to those of CUTEst.jl (up to differences in numerical precision), even when they differ from the original problem (which happens rarely). 
 
-Other packages providing test problems: OptimTestProblems.jl, OptimizationTestFunctions.jl, BenchmarkFunctions.jl, CUTEst.jl, OptimizationProblems.jl, and S2MPJ.jl.
+### See also
+
+OptimTestProblems.jl, OptimizationTestFunctions.jl, BenchmarkFunctions.jl, CUTEst.jl, OptimizationProblems.jl, S2MPJ.jl.
