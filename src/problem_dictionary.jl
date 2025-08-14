@@ -20,7 +20,7 @@ landscapes["Large-Scale Quadratic"] = gen_large_polynomial
 
 include("problems/paraboloid.jl")
 landscapes["Paraboloid Diagonal"] = gen_paraboloid_diagonal
-landscapes["Paraboloid Random Matrix"] = gen_paraboloid_random_matrix
+# landscapes["Paraboloid Random Matrix"] = gen_paraboloid_random_matrix # Best not to include it since it is random
 
 include("problems/perm_2.jl")
 landscapes["Perm 2"] = gen_perm_0dβ
