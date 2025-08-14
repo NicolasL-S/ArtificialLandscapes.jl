@@ -24,7 +24,7 @@ x0, obj, grad! = landscapes["LUKSAN11LS"]()
 Solving using Optim:
 ```Julia
 using Optim
-optimize(obj, grad!, x0, LBFGS(),Optim.Options(iterations = 10000))
+optimize(obj, grad!, x0, Optim.Options(iterations = 10000))
 ```
 The problems can be generated with varying precisions, and sometimes varying specifications:
 ```Julia

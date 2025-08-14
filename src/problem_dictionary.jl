@@ -1,3 +1,27 @@
+"""
+``landscape`` is a dictionary of optimization problems. To see the full list of problems:
+```Julia
+keys(landscapes)
+```
+All problems provide a starting point, objective and an in-place gradient function. To generate a problem:
+```Julia
+x0, obj, grad! = landscapes["LUKSAN11LS"]()
+```
+Solving using Optim:
+```Julia
+using Optim
+optimize(obj, grad!, x0, Optim.Options(iterations = 10000))
+```
+The problems can be generated with varying precisions, and sometimes varying specifications:
+```Julia
+x0, obj, grad! = landscapes["Extended Powell"](;n = 100, T = Float16)
+```
+To learn more about a problem and its available keyword arguments, it must be extracted from the dictionary.
+```Julia
+p = landscapes["LUKSAN11LS"]
+? p
+```
+"""
 const landscapes = Dict{AbstractString, Function}()
 
 include("problems/dixon_price.jl")
