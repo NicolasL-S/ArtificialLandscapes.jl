@@ -1,5 +1,5 @@
 """
-$(read("README.md", String))
+$(read(joinpath((@__DIR__)[1:end-4], "README.md"), String))
 """
 module ArtificialLandscapes
 
