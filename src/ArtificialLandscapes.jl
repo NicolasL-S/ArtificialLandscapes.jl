@@ -1,3 +1,6 @@
+"""
+$(read("README.md", String))
+"""
 module ArtificialLandscapes
 
 	# ---- Imports ----
