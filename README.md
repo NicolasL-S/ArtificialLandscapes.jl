@@ -41,4 +41,4 @@ As much as possible, problems should be faithful to their original versions. A n
 
 ### See also
 
-OptimTestProblems.jl, OptimizationTestFunctions.jl, BenchmarkFunctions.jl, CUTEst.jl, OptimizationProblems.jl, S2MPJ.jl.
+OptimTestProblems.jl, OptimizationTestFunctions.jl, BenchmarkFunctions.jl, CUTEst.jl, OptimizationProblems.jl, S2MPJ.
