@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/NicolasL-S/ArtificialLandscapes.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/NicolasL-S/ArtificialLandscapes.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
-ArtificialLandscapes is a pure-Julia collection of well-known optimization test problems. It is designed to be fast by avoiding non-Julia libraries and using manually-coded derivatives. Combined with usual tricks like memory preallocation, type stability, and minimal abstraction, gradients can be evaluated 1000x faster than in similar packages.
+ArtificialLandscapes is a pure-Julia collection of well-known optimization test problems. It is designed to be fast by avoiding non-Julia libraries and using manually-coded derivatives. Combined with usual tricks like memory preallocation, type stability, and minimal abstraction, gradients can often be evaluated orders of magnitude faster than in similar packages.
 
 This project is in its infancy. At the moment, only starting points, objective functions and gradients are provided; no Hessian yet. Also, only unconstrained problems have been added so far.
 
