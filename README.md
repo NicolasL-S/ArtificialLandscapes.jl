@@ -37,7 +37,7 @@ p = landscapes["LUKSAN11LS"]
 ```
 ### Accuracy
 
-As much as possible, problems should be faithful to their original versions. A notable exception are those from the CUTEst library. Since they have become a widely accepted standard, every effort is made to match the outputs of CUTEst.jl, even in the rare occasions when they deviate from the original.
+Problems should as faithful as possible to their original versions. A notable exception are those from the CUTEst library. Since they have become a widely accepted standard, every effort is made to match the outputs of CUTEst.jl, even in the rare occasions when they deviate from the source problem.
 
 ### See also
 
