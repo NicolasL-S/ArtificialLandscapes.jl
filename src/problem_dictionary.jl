@@ -22,7 +22,7 @@ p = landscapes["LUKSAN11LS"]
 ? p
 ```
 """
-const landscapes = Dict{AbstractString, Function}()
+landscapes = Dict{AbstractString, Function}()
 
 include("problems/dixon_price.jl")
 landscapes["Dixon and Price"] = gen_dixon_price
